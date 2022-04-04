@@ -1,0 +1,48 @@
+Insertion Sort Algoritm Homeworks:
+
+Project 1
+ 
+[22, 27, 16, 2, 18, 6] -> Insertion Sort
+
+Questions:
+1) Write the stages of the above array according to the sort type.
+
+2) Write the Big-O notation.
+
+3) Time Complexity: Average case: The number which we are looking for is in the middle, Worst case: The number we are looking for is in the end, 
+                    Best case: The number we are looking for is in the top.
+
+4) Which case will 18 be after the array is sorted? Write.
+
+5) [7, 3, 5, 8, 2, 9, 4, 15, 6] Write the first 4 steps of this array according to the Insertion Sort.
+
+Answers:
+                
+1) Steps:
+   1.Step: [22, 27, 16, 2, 18, 6]    ->  n  
+   2.Step: [2, 27, 16, 22, 18, 6]    ->  (n-1)
+   3.Step: [2, 6, 16, 22, 18, 27]    ->  (n-2)
+   4.Step: [2, 6, 16, 18, 22, 27]    ->  (n-3)
+   5.Step: [2, 6, 16, 18, 22, 27]    ->    1
+   
+2) n+(n-1)+(n-2)+(n-3)+...+1
+    = n * (n+1) / 2
+    = (n^2 + n) / 2     -> n2:Dominant
+   The Big O value of this value is O(n^2).
+   
+3) Average Case: In this example, 16 can be sampled as the middle value.
+   Big O-Notation: O(n^2).
+   
+   Worst Case: We can say 27 as the worst value. Because it is our last value in the sorted array.
+   Big O-Notation: O(n).
+   
+   Best Case: The best value is 2. Because it is our first value in the sorted array.
+   Big O-Notation: O(n).
+   
+4) That's why 18 value is in the middle of sorted array, it can take as an Avarage Case. 
+
+5) First Four Steps:
+   1.Step: [7, 3, 5, 8, 2, 9, 4, 15, 6]    ->  n              
+   2.Step: [2, 3, 5, 8, 7, 9, 4, 15, 6]    ->  (n-1)
+   3.Step: [2, 3, 4, 8, 7, 9, 5, 15, 6]    ->  (n-2)
+   4.Step: [2, 3, 4, 5, 7, 9, 8, 15, 6]    ->  (n-3)
